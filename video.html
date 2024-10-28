@@ -3,65 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music Table</title>
+    <title>Video Page</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <style>
-    nav {
-      display: flex;
-      justify-content: space-around;
-      background-color: #333;
-      padding: 20px;
-      border-radius: 50px;
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    nav a {
-      font-family: "Poppins", sans-serif;
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      padding: 12px 20px;
-      border-radius: 30px;
-      background-color: #555;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    nav a:hover {
-      background-color: #ff6b6b;
-      transform: scale(1.1);
-    }
-
-    nav a:active {
-      transform: scale(1.05);
-    }
-  </style>
-  <nav>
-    <a href="musictable.html">Music Table</a><a href="index.html">Homepage</a
-    ><a href="video.html">Video</a>
-  </nav>
   <body>
-    <div style="display: flex; justify-content: center; margin: 45px">
-      <h1
-        style="
-          text-align: center;
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-            sans-serif;
-          font-size: xxx-large;
-        "
-      >
-        <!-- h1 with my name, I put a span to make the header more interesting -->
+    <!-- Navbar -->
+    <nav>
+      <a href="musictable.html">Music Table</a>
+      <a href="index.html">Homepage</a>
+      <a href="video.html">Video</a>
+    </nav>
+
+    <!-- Heading -->
+    <div
+      class="fade-in show"
+      style="display: flex; justify-content: center; margin: 45px"
+    >
+      <h1>
         Video
-        <span
-          style="
-            color: rgb(62, 70, 80);
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-              serif;
-          "
-          >TAG:</span
-        >
+        <span>TAG:</span>
       </h1>
     </div>
+
+    <!-- Video Player -->
     <div style="text-align: center">
       <video controls src="/videos/duke.mp4"></video>
     </div>

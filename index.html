@@ -4,125 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ben Khazaal Contact</title>
-    <!-- here is the title for the homepage -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <style>
-    nav {
-      display: flex;
-      justify-content: space-around;
-      background-color: #333;
-      padding: 20px;
-      border-radius: 50px;
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    nav a {
-      font-family: "Poppins", sans-serif;
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      padding: 12px 20px;
-      border-radius: 30px;
-      background-color: #555;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    nav a:hover {
-      background-color: #ff6b6b;
-      transform: scale(1.1);
-    }
-
-    nav a:active {
-      transform: scale(1.05);
-    }
-  </style>
-  <nav>
-    <a href="musictable.html">Music Table</a><a href="index.html">Homepage</a
-    ><a href="video.html">Video</a>
-  </nav>
   <body>
-    <div style="display: flex; justify-content: center; margin: 45px">
-      <h1
-        style="
-          text-align: center;
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-            sans-serif;
-          font-size: xxx-large;
-        "
-      >
-        <!-- h1 with my name, I put a span to make the header more interesting -->
+    <!-- Navbar -->
+    <nav>
+      <a href="musictable.html">Music Table</a>
+      <a href="index.html">Homepage</a>
+      <a href="video.html">Video</a>
+    </nav>
+
+    <!-- Heading -->
+    <div
+      class="fade-in show"
+      style="display: flex; justify-content: center; margin: 45px"
+    >
+      <h1>
         Ben
-        <span
-          style="
-            color: rgb(62, 70, 80);
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-              serif;
-          "
-          >KHAZAAL</span
-        >
+        <span>KHAZAAL</span>
       </h1>
     </div>
-    <div
-      style="
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 200px 200px;
-        gap: 100px;
-        margin: 50px;
-      "
-    >
+
+    <!-- Grid Layout for Content -->
+    <div class="grid-container">
       <div>
-        <h1
-          style="
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-          "
-        >
-          <!-- these two headings also contain span tags with different styles -->
-          About
-          <span
-            style="
-              color: rgb(62, 70, 80);
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-            "
-            >Me:</span
-          >
-        </h1>
-        <div>
-          <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">
-            Howdy folks! My name is Benjamin Khazaal, I am 21 years old and I am
-            majoring in software development. I go to Grand Canyon University
-            where I am set to graduate in the Fall of 2026.
-          </p>
-        </div>
+        <h1>About <span>Me:</span></h1>
+        <p class="about-text">
+          Howdy folks! My name is Benjamin Khazaal, I am 21 years old and I am
+          majoring in software development. I go to Grand Canyon University
+          where I am set to graduate in the Fall of 2026.
+        </p>
       </div>
-      <div style="margin-top: 50px">
-        <h1
-          style="
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-          "
-        >
-          Picture of
-          <span
-            style="
-              color: rgb(62, 70, 80);
-              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
-                serif;
-            "
-            >Kevin:</span
-          >
-        </h1>
-        <div>
-          <img
-            style="height: 200px; float: none"
-            src="./images/kevin.jpeg"
-            alt="kevin"
-          />
-        </div>
+      <div>
+        <h1>Picture of <span>Kevin:</span></h1>
+        <img id="kevin-img" src="./images/kevin.jpeg" alt="kevin" />
       </div>
     </div>
+    <p
+      class="rubik-wet-paint-regular"
+      style="font-size: 75px; text-align: center; color: orangered"
+    >
+      HAPPY <span style="color: black">SPOOKY</span> SEASON
+    </p>
   </body>
 </html>
