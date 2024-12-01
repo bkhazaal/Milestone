@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ben Khazaal Contact</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- jQuery Library -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Ensures that JQuery is running correctly
+      $(document).ready(function () {
+        console.log("jQuery is ready!");
+
+        // Hide the spooky text
+        $("#hide-btn").click(function () {
+          console.log("Hide button clicked. Hiding the spooky text.");
+          $("#spooky").hide();
+        });
+
+        // Show the spooky text
+        $("#show-btn").click(function () {
+          console.log("Show button clicked. Showing the spooky text.");
+          $("#spooky").show();
+        });
+      });
+    </script>
+    <style>
+      button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -19,10 +51,7 @@
       class="fade-in show"
       style="display: flex; justify-content: center; margin: 45px"
     >
-      <h1>
-        Ben
-        <span>KHAZAAL</span>
-      </h1>
+      <h1>Ben <span>KHAZAAL</span></h1>
     </div>
 
     <!-- Grid Layout for Content -->
@@ -40,14 +69,20 @@
         <img id="kevin-img" src="./images/kevin.jpeg" alt="kevin" />
       </div>
     </div>
+
+    <!-- Spooky Season Section -->
     <p
       class="rubik-wet-paint-regular"
+      id="spooky"
       style="font-size: 75px; text-align: center; color: orangered"
     >
       HAPPY <span style="color: black">SPOOKY</span> SEASON
     </p>
-    <button onclick="lastIndex()">Get last index</button>
-    <h1 id="numbers" style="visibility: hidden"></h1>
-    <script src="script/script.js"></script>
+
+    <!-- Buttons -->
+    <div style="display: flex; justify-content: center; margin-bottom: 5rem">
+      <button id="hide-btn">Hide</button>
+      <button id="show-btn">Show</button>
+    </div>
   </body>
 </html>

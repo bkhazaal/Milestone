@@ -4,73 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Table</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
-      <a href="musictable.html">Music Table</a>
-      <a href="index.html">Homepage</a>
-      <a href="video.html">Video</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Ben Khazaal</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="musictable.html">Music Table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <!-- Heading -->
-    <div
-      class="fade-in show"
-      style="display: flex; justify-content: center; margin: 45px"
-    >
-      <h1>
-        Music
-        <span>TABLE:</span>
-      </h1>
+    <!-- Music Table -->
+    <div class="container mt-5">
+      <h1 class="text-center">Music <span>TABLE:</span></h1>
+      <div class="table-responsive mt-4">
+        <table class="table table-bordered text-center">
+          <thead class="table-dark">
+            <tr>
+              <th>Songs</th>
+              <th>That I</th>
+              <th>Made</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <audio controls>
+                  <source src="/music/Boombis.mp3" type="audio/mpeg" />
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="/music/FUNTRIP....mp3" type="audio/mpeg" />
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="/music/Green Firepit.mp3" type="audio/mpeg" />
+                </audio>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <audio controls>
+                  <source src="/music/Dripe.mp3" type="audio/mpeg" />
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="/music/Wonk.mp3" type="audio/mpeg" />
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="/music/Zoned Out.mp3" type="audio/mpeg" />
+                </audio>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-
-    <!-- Music Table Container -->
-    <div class="table-container">
-      <table>
-        <tr>
-          <th>Songs</th>
-          <th>That I</th>
-          <th>Made</th>
-        </tr>
-        <tr>
-          <td>
-            <audio controls>
-              <source src="/music/Boombis.mp3" type="audio/mpeg" />
-            </audio>
-          </td>
-          <td>
-            <audio controls>
-              <source src="/music/FUNTRIP....mp3" type="audio/mpeg" />
-            </audio>
-          </td>
-          <td>
-            <audio controls>
-              <source src="/music/Green Firepit.mp3" type="audio/mpeg" />
-            </audio>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <audio controls>
-              <source src="/music/Dripe.mp3" type="audio/mpeg" />
-            </audio>
-          </td>
-          <td>
-            <audio controls>
-              <source src="/music/Wonk.mp3" type="audio/mpeg" />
-            </audio>
-          </td>
-          <td>
-            <audio controls>
-              <source src="/music/Zoned Out.mp3" type="audio/mpeg" />
-            </audio>
-          </td>
-        </tr>
-      </table>
-      <button onclick="genreShow()">Show Genre</button>
-      <h1 id="#para" style="visibility: hidden">Hip-Hop</h1>
-    </div>
-    <script src="script/script.js"></script>
   </body>
 </html>
